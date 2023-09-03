@@ -1,15 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-
-const Home = () => {
-  return "This is an example of a compnent";
-}
+import {Header} from "./component/Header"
 
 function App() {
   return (
     <div>
-      <h1>Hello React</h1>
-      <Home />
+      <Header />
     </div>
   );
 }
