@@ -1,37 +1,136 @@
-export const Socials = () => {
+import headshot from './mperalta.png'; 
+import resume from './contact/resume.pdf';
+
+export const Navigation = () => {
   return (
-    <div>
-      <div class="social-links">
-            <a href="https://twitter.com/username" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="https://www.facebook.com/username" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/username" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+    <nav
+    class="relative flex w-full items-center justify-between bg-white py-2 shadow-sm shadow-neutral-700/10 dark:bg-neutral-800 dark:shadow-black/30  lg:flex-wrap lg:justify-start"
+    data-te-navbar-ref>
+
+    <div class="flex w-full flex-wrap items-center justify-between px-6">
+      <div class="flex items-center">
+
+        <button
+          class="block border-0 bg-transparent py-2 pr-2.5 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button" data-te-collapse-init data-te-target="#navbarSupportedContentY"
+          aria-controls="navbarSupportedContentY" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="[&>svg]:w-7">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+              <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+
+
+        <a class="text-primary dark:text-primary-400" href="#">
+          <span class="[&>svg]:ml-2 [&>svg]:mr-3 [&>svg]:h-6 [&>svg]:w-6 [&>svg]:lg:ml-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+
+
+      <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+        id="navbarSupportedContentY" data-te-collapse-item>
+
+        <ul class="mr-auto lg:flex lg:flex-row" data-te-navbar-nav-ref>
+          <li data-te-nav-item-ref>
+            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+              href="#portfolio" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light"
+              disabled>Portfolio</a>
+          </li>
+          <li data-te-nav-item-ref>
+            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+              href="https://drive.google.com/file/d/1UW0rm1slE7PUIJM2By3EOFdE1m051Wmp/view?usp=sharing" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Resume</a>
+          </li>
+          <li class="mb-2 lg:mb-0" data-te-nav-item-ref>
+            <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
+              href="#contact" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Contact</a>
+          </li>
+        </ul>
+
+      </div>
     </div>
+  </nav>
+
   );
 }
 
 export const Home = () => {
   return (
-    <div>
-      <header id="header">
-          <div class="container">
+      <>
+      <section class="mb-40">
 
-          <h1><a href="index.html">May Peralta</a></h1>
-          <h2>I'm a passionate <span>full-stack web developer</span> from Miami</h2>
+          < Navigation />
 
-          <nav id="navbar" class="navbar">
-            <ul>
-              <li><a class="nav-link active" href="#home">Home</a></li>
-              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-              <li><a class="nav-link" href="https://google.com">Resume</a></li>
-              <li><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav>
+          <div class="px-6 py-12 text-center md:px-12 lg:text-left">
+            <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
+              <div class="grid items-center lg:grid-cols-2">
+                <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
+                  <div
+                    class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+                    <h1 class="mt-2 mb-16 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
+                      I'm a passionate<br /><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">full-stack developer</span> from Miami
+                    </h1>
 
-          <Socials />
-        </div>
-      </header>
+           
+              {/* LinkedIn */}
+              <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
+              data-te-ripple-init data-te-ripple-color="light" href="https://www.linkedin.com/in/mayperalta" role="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                </svg>
+              </a>
+              {/* Facebook */}
+              <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
+              data-te-ripple-init data-te-ripple-color="light" href="https://www.facebook.com/may.peralta.5" role="button">
+                 <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="currentColor"
+                      viewBox="0 0 24 24">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                  </svg>
+              </a> 
+                  </div>
+                </div>
+                <div class="md:mb-12 lg:mb-0">
+                     <img src={headshot} alt="May Peralta headshot" class="w-full rounded-lg shadow-lg dark:shadow-black/20" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </section>
+      </>
+  );
+}
+
+export const Footer = () => {
+  return (
+    <>
+
+<footer
+  class="flex flex-col items-center bg-neutral-200 text-center text-white dark:bg-neutral-600">
+
+  <div
+    class="w-full bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+    © 2023 Copyright May Peralta.
   </div>
+</footer>
+    
+    </>
   );
 }
