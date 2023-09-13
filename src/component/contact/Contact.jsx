@@ -1,16 +1,24 @@
-import React from "react";
+import React, {useRef} from "react";
 import { TEInput, TERipple } from "tw-elements-react";
-
-function SubmitForm(props) {
-
-
-}
-
-
-
+import emailjs from '@emailjs/browser';
 
 
 export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // service_id, templte_id and public key will get from Emailjs website when you create account and add template service and email service 
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 
+    'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    };
+
+
   return (
     <div>
     <h2 id="contact" class="mb-4 text-center mt-20 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -25,7 +33,7 @@ export const Contact = () => {
                 <div className="px-4 md:px-0 lg:w-6/12">
                   <div className="md:mx-6 md:p-12">
           
-                    <form>
+                  <form ref={form} onSubmit={sendEmail}>
                       {/* <!--Name input--> */}
                       <p>Name</p>
                       <TEInput
@@ -57,7 +65,7 @@ export const Contact = () => {
                       {/* <!--Submit button--> */}
                       <TERipple rippleColor="light" className="w-full">
                         <button id="submit"
-                          type="button"
+                          type="submit" value="Send"
                           className="inline-block rounded w-full bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                           style={{
                             background:
