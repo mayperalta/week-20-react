@@ -47,7 +47,7 @@ export const Navigation = () => {
           </li>
           <li data-te-nav-item-ref>
             <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="https://drive.google.com/file/d/1UW0rm1slE7PUIJM2By3EOFdE1m051Wmp/view?usp=sharing" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Resume</a>
+              href="https://drive.google.com/file/d/1UW0rm1slE7PUIJM2By3EOFdE1m051Wmp/view?usp=sharing" target="_blank" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light">Resume</a>
           </li>
           <li class="mb-2 lg:mb-0" data-te-nav-item-ref>
             <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
