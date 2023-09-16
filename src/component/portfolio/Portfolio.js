@@ -32,7 +32,7 @@ export const Portfolio = () => {
         </div>
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://pwa-t-editor-aafa34e5160b.herokuapp.com/" >
+    <a href="https://pwa-t-editor-aafa34e5160b.herokuapp.com/" target="_blank" >
       <img
         class="rounded-t-lg"
         src={pic2}
@@ -51,7 +51,7 @@ export const Portfolio = () => {
 
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://drive.google.com/file/d/15b5g4Y-4jMM7oGvqH9FiCjkCHGQK_UFB/view">
+    <a href="https://drive.google.com/file/d/15b5g4Y-4jMM7oGvqH9FiCjkCHGQK_UFB/view" target="_blank">
       <img
         class="rounded-t-lg"
         src={pic3}
@@ -70,7 +70,7 @@ export const Portfolio = () => {
 
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://myworkoutpal-fb26ea75640f.herokuapp.com/">
+    <a href="https://myworkoutpal-fb26ea75640f.herokuapp.com/" target="_blank">
       <img
         class="rounded-t-lg"
         src={pic4}
@@ -89,7 +89,7 @@ export const Portfolio = () => {
 
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://github.com/mayperalta/week-13-ecommerce">
+    <a href="https://github.com/mayperalta/week-13-ecommerce" target="_blank">
       <img
         class="rounded-t-lg"
         src={pic5}
@@ -108,7 +108,7 @@ export const Portfolio = () => {
 
   <div
     class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
-    <a href="https://gist.github.com/mayperalta/07c32814b18b0fc8866b8d8f308c6cfa">
+    <a href="https://gist.github.com/mayperalta/07c32814b18b0fc8866b8d8f308c6cfa" target="_blank">
       <img
         class="rounded-t-lg"
         src={pic6}

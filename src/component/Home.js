@@ -42,7 +42,7 @@ export const Navigation = () => {
         <ul class="mr-auto lg:flex lg:flex-row" data-te-navbar-nav-ref>
           <li data-te-nav-item-ref>
             <a class="block py-2 pr-2 text-neutral-500 transition duration-150 ease-in-out hover:text-neutral-600 focus:text-neutral-600 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 dark:disabled:text-white/30 lg:px-2 [&.active]:text-black/80 dark:[&.active]:text-white/80"
-              href="#portfolio" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light"
+              href="#portfolio" data-te-nav-link-ref data-te-ripple-init data-te-ripple-color="light" 
               disabled>Portfolio</a>
           </li>
           <li data-te-nav-item-ref>
@@ -82,7 +82,7 @@ export const Home = () => {
            
               {/* LinkedIn */}
               <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
-              data-te-ripple-init data-te-ripple-color="light" href="https://www.linkedin.com/in/mayperalta" role="button">
+              data-te-ripple-init data-te-ripple-color="light" href="https://www.linkedin.com/in/mayperalta" target="_blank" role="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -94,7 +94,7 @@ export const Home = () => {
               </a>
               {/* Facebook */}
               <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
-              data-te-ripple-init data-te-ripple-color="light" href="https://www.facebook.com/may.peralta.5" role="button">
+              data-te-ripple-init data-te-ripple-color="light" href="https://www.facebook.com/may.peralta.5" target="_blank" role="button">
                  <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-5 w-5"
@@ -106,7 +106,7 @@ export const Home = () => {
               </a> 
               {/* GitHub */}
               <a class="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
-              data-te-ripple-init data-te-ripple-color="light" href="https://www.facebook.com/may.peralta.5" role="button">
+              data-te-ripple-init data-te-ripple-color="light" href="https://github.com/mayperalta" target="_blank" role="button">
                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-4 w-4"
@@ -139,11 +139,11 @@ export const Footer = () => {
       <div
         className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block">
-          <span>Get connected with us on social networks:</span>
+          <span>Get connected:</span>
         </div>
         {/* <!-- Social network icons container --> */}
         <div className="flex justify-center">
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://www.linkedin.com/in/mayperalta" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -154,7 +154,7 @@ export const Footer = () => {
             </svg>
           </a>
           
-          <a className="mr-6 text-neutral-600 dark:text-neutral-200">
+          <a className="mr-6 text-neutral-600 dark:text-neutral-200" href="https://www.facebook.com/may.peralta.5" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -164,7 +164,7 @@ export const Footer = () => {
                 d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
             </svg>
           </a>
-          <a className="text-neutral-600 dark:text-neutral-200">
+          <a className="text-neutral-600 dark:text-neutral-200" href="https://github.com/mayperalta" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -296,7 +296,7 @@ export const Footer = () => {
         <span>© 2023 Copyright: May Peralta. Components designed using
         <a
           className="font-semibold text-neutral-600 dark:text-neutral-400"
-          href="https://tailwind-elements.com/"
+          href="https://tailwind-elements.com/" target="_blank"
         > Tailwind Elements</a>. For more information, check <a className="font-semibold text-neutral-600 dark:text-neutral-400" 
         href="" >Git Hub</a></span>.
       </div>
