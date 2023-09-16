@@ -10,6 +10,7 @@ This app showcases and give insights to the projects as well as the technologies
   - [Visuals](#visuals)
   - [Technologies Used](#technologies-used)
   - [License](#license)
+  - [Deployment](#deployment)
   - [Contributing](#contributing)
   - [Questions](#questions)
 
@@ -27,12 +28,14 @@ This app showcases and give insights to the projects as well as the technologies
   ## Visuals
   The following animations demonstrats the application functionalities:
 
-
   ## Technologies Used
-  HTML, CSS, JS, Node.Js, Express.js, and Heroku. 
+  HTML, CSS, JS, Node.Js, Express.js, React, Tailwind, and Heroku. 
 
   ## License
   MIT License
+
+  ## Deployment
+  Heroku deployment: https://react-portfolio20-deb6bf85d5ab.herokuapp.com/
 
   ## Contributing
   If you would like to contribute to this project, please fork the project and submit a pull request.
